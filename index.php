@@ -3,7 +3,7 @@
 
 echo "git_test";
 
-echo "\n". 'git test ';
+echo "\n". 'git t';
 
 
 
