@@ -3,6 +3,6 @@
 
 echo "git_test";
 
-echo "\n". 'git';
+echo "\n". 'git test2';
 
 ?>
