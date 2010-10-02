@@ -1,9 +1,13 @@
 <?php
 
+function test ( $string ) {
+	echo $string
+}
+
 
 echo "git_test";
 
-echo "\n". 'git test2';
-echo "\n". 'git test3';
+test( "\n". 'git test2' );
+test( "\n". 'git test3' );
 
 ?>
