@@ -4,8 +4,10 @@ namespace Slides\Http\Query;
 
 use Slides\Singleton;
 
-abstract class MethodeAbstract extends Singleton {
-    protected function _construct ($test="") {
+abstract class MethodeAbstract extends Singleton
+{
+    protected function _construct ()
+    {
         
         
     }
