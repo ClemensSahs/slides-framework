@@ -10,11 +10,11 @@ $config = require_once __DIR__ . '/example/mapperConfig.php';
 
 $mapperManager = new MapperManager();
 $mapperManager->setConfig($config);
-$user = $mapperManager->findDataObject('user')
-					  ->where()->egual('primaryKey', 1 )
-					  ->getRowSet()
-					  ->current();
+$userGateway = $mapperManager->getDataObjectGateway('user');
+$user = $userGateway->find( 1 ) #find by primaryKey
+				    ->current();
 
-$group = $user->getReference( 'group' );
+# n user to 1 group relation
+$group = $mapperManager->getReference( $user, 'group' )->current();
 
 echo $group->groupName;
