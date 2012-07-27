@@ -2,8 +2,7 @@
 
 namespace Slides\DataMapper\DataObject;
 
-abstract class AbstractDataObject
-	implements DataObjectInterface {
+abstract class AbstractDataObject {
 	
 	
 	
