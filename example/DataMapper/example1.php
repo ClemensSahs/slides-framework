@@ -4,21 +4,22 @@ namespace Slides\Example;
 
 use Slides\DataMapper\MapperManager;
 
+require_once __DIR__ . '/../bootstrap.php';
 
-require_once __DIR__ . '/library/Slides/DataMapper/MapperManager.php';
-$config = require_once __DIR__ . '/example/mapperConfig.php';
+// require_once __DIR__ . '/library/Slides/DataMapper/MapperManager.php';
+$config = require_once __DIR__ . '/mapperConfig.php';
 
 $mapperManager = new MapperManager();
 $mapperManager->setConfig($config);
-$user = $mapperManager->findDataObject('user')
-					  ->where()->equal('primaryKey', 1 )
-					  ->getRowSet()
-					  ->current();
+// $userGateway = $mapperManager->getDataObjectGateway('user');
 
-if ( $user->userName === 'foo' ) {
-	$user->userName = 'bar';
-} else {
-	$user->userName = 'foo';
-};
+// $user = $userGateway->find( 1 ) #find by primaryKey
+// 				    ->current();
 
-$user->save();
+// if ( $user->userName === 'foo' ) {
+// 	$user->userName = 'bar';
+// } else {
+// 	$user->userName = 'foo';
+// };
+
+// $user->save();
