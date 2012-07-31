@@ -3,8 +3,7 @@
 namespace Slides\DataMapper\DataObject;
 
 abstract class AbstractDataObject
-	implements DataObjectInterface {
-	
-	
-	
+    implements DataObjectInterface {
+    
+    abstract public function get($propertyName);
 }

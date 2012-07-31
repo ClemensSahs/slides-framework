@@ -2,15 +2,23 @@
 
 
 return array(
-    'class'=>'Slides\DataMapper\Storage\PhpMysql',
+    'class'=>'Slides\DataMapper\Storage\PhpSQLite',
     'option'=>array(
-        'db.host'=>'localhost',
-        'db.user'=>'localhost',
-        'db.password'=>'localhost',
-        'db.dbname'=>'localhost',
+        'db.host'=>'192.168.170.5',
+        'db.user'=>'BruCle',
+        'db.password'=>'te5Tfd',
+        'db.dbname'=>'bruce_clemens',
         'db.table'=>array(
-            'user'=>'user'
-        )
+            'user'=>array(
+                'name'=>'user',
+                'primary'=>array(
+                    'user.id',
+                ),
+            ),
+        ),
+    ),
+    'objectLink'=>array(
+        'db.adapter'=>'db-adapter-name-in-DI-locator',
     ),
     'property'=>array(
         'user.id'=>array(

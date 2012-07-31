@@ -1,6 +1,8 @@
 <?php 
 
 return array(
+    'objectClass'=>'Slides\DataMapper\DataObject\DataObject',
+    'mapperClass'=>'Slides\DataMapper\Mapper\SimpleMapper',
     'id'=>'id',
     'property'=>array(
         'id'=>array(

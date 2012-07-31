@@ -1,11 +1,11 @@
 <?php
 
 return array(
-    'object'=>array(
-        'user'=>require __DIR__ . '/object.user.php'
+    'mapper'=>array(
+        'user'=>require __DIR__ . '/mapper.user.php'
     ),
     'storage'=>array(
-        'db.user'=>require __DIR__ . '/storage.db.user.php'
+        'db.user'=>require __DIR__ . '/storage.db.user.sqlite.php'
     )
 
 
